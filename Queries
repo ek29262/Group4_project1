@@ -1,0 +1,11 @@
+## which product was ordered the most (Simple)
+
+SELECT product_name, quantity
+FROM `order details` JOIN  Product on `order details`. product_id = Product.Product_id
+ORDER BY quantity DESC; 
+
+
+##How many orders were received in each day
+SELECT count(order_id)
+FROM  `Order`
+Group by order_date;
